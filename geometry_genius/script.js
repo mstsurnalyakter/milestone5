@@ -25,6 +25,8 @@ const emptyInputField = (id1, id2) => {
   findElementById(id2).value = "";
 };
 
+
+
 const btnClick = (btnId, firstInputId, secondInputId) => {
   const firstInputValue = getInputValue(firstInputId);
   const secondInputValue = getInputValue(secondInputId);
