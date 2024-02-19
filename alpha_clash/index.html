@@ -16,7 +16,10 @@
       class="bg-[#010313] min-h-screen bg-[url(./images/background.png)] bg-no-repeat bg-center"
     >
       <!-- home section -->
-      <section class="flex items-center justify-center min-h-screen hidden">
+      <section
+        id="home-section"
+        class="flex items-center justify-center min-h-screen"
+      >
         <div class="space-y-6 text-center">
           <h1 class="text-[#FFF] anton text-8xl">ALPHABET CLASH</h1>
           <p class="text-[#fff] text-2xl font-medium">
@@ -28,6 +31,7 @@
 
       <!-- play ground section -->
       <section
+        id="play-ground-section"
         class="flex items-center justify-center min-h-screen flex-col space-y-14 hidden"
       >
         <!-- screen -->
@@ -36,7 +40,7 @@
             class="artboard artboard-horizontal phone-6 border-[#010313CC] border-[20px] bg-[#FFFFFFB3]"
           >
             <div class="flex items-center justify-center h-full text-9xl">
-              <p class="" id="currentLetter">Y</p>
+              <p class="uppercase" id="currentLetter">Y</p>
             </div>
           </div>
         </section>
@@ -92,12 +96,13 @@
             <span id="score">0</span>
           </button>
         </section>
-
       </section>
 
       <!-- final score section -->
-      <section class="min-h-screen flex items-center justify-center hidden">
-        <div class="bg-[#FFFFFF12] w-96 h-96 flex items-center justify-center flex-col space-y-4 rounded-2xl p-4">
+      <section id="score-section" class="min-h-screen flex items-center justify-center hidden">
+        <div
+          class="bg-[#FFFFFF12] w-96 h-96 flex items-center justify-center flex-col space-y-4 rounded-2xl p-4"
+        >
           <h1 class="text-white text-6xl font-extrabold">
             Score : <span id="final-score">0</span>
           </h1>
@@ -106,5 +111,7 @@
         </div>
       </section>
     </main>
+
+    <script src="./script.js"></script>
   </body>
 </html>
