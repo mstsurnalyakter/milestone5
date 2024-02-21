@@ -20,6 +20,8 @@ const removeClass = (id, className) => {
   findElementById(id).classList.remove(className);
 };
 
+const audio = new Audio();
+
 // home section hidden and play ground section show
 findElementById("playBtn").addEventListener("click",()=>{
     addClass("home-section","hidden");
@@ -42,7 +44,7 @@ document.addEventListener('keyup', e =>{
     const expectedKey = generateAlphabet();
 
     const p = document.createElement("p");
-    
+
     // console.log('pressedKey',pressedKey);
     // console.log('expectedKey',expectedKey);
 })
